@@ -1,0 +1,213 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #3e4216;
+    font-family: 'Arial', sans-serif; /* This is a commonly used sans-serif font */
+
+}
+/* CSS rules for the fifth and sixth pages */
+.fifth-page h1, .sixth-page h1 {
+    font-size: 4em; /* Very large font size */
+    text-align: center; /* Center text horizontally */
+    color: #3e4216; /* Initial color */
+    transition: color 0.5s ease; /* Smooth transition for color change */
+    margin-top: 20px; /* Add some space on the top */
+    margin-bottom: 20px; /* Add some space at the bottom */
+}
+
+/* CSS for the 'comingSoon' class to apply hover effect */
+.comingSoon:hover {
+    color: #3CB371; /* Color changes to green when hovered */
+}
+
+
+/* CSS for the first page container */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    background-color: #3e4216;
+}
+
+/* CSS for the second page container */
+/* CSS for the second page container */
+.second-page {
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    background-color: #3e4216; /* Initial background color same as the first container */
+    opacity: 0; /* Set initial opacity to 0 for the fade-in effect */
+    transition: opacity 0.5s ease-in-out, background-color 0.5s ease-in-out; /* Transition for opacity and background color */
+    display: flex; /* Use flexbox to center content */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center-align the text */
+}
+
+.second-page h2 {
+    font-size: 48px; /* Increase the font size for the heading */
+}
+
+.second-page p {
+    font-size: 36px; /* Increase the font size for the paragraph */
+}
+
+.third-page {
+    height: 100vh;
+    background-color: #3e4216; /* Background color */
+    padding: 50px; /* Space around the content */
+    opacity: 0; /* Set initial opacity to 0 */
+    transition: opacity 0.5s ease-in-out; /* Transition for the opacity */
+    overflow-y: auto; /* Allows content to scroll if it overflows */
+    color: #3e4216; /* Green font color for the whole page */
+}
+
+.third-page h2 {
+    color: #3e4216; /* Green color for the title */
+    font-size: 2em; /* Increased font size for the title */
+    margin-bottom: 30px; /* Space below the title */
+}
+
+.link-section {
+    list-style: none; /* No bullets */
+    padding: 0; /* No padding */
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    color: #3e4216; /* Green color for link text */
+    text-decoration: none;
+    font-size: 1.2em; /* Increased font size for links */
+    position: relative; /* Position relative for pseudo-elements */
+    margin-bottom: 20px;
+    padding-right: 50px; /* Provide space for the line to extend to the number */
+}
+
+.link-item .icon {
+    display: inline-block;
+    width: 40px; /* Fixed width for all icon containers */
+    height: 40px; /* Fixed height for all icon containers */
+    text-align: center; /* Center the icon horizontally */
+    line-height: 40px; /* Center the icon vertically */
+    margin-right: 15px;
+    font-size: 1.4em; /* Adjust if needed */
+    color: #3e4216; /* Green color for icons */
+}
+
+
+.link-item .page-number {
+    margin-left: auto;
+    padding-left: 25px;
+    font-size: 1.2em;
+    color: #3e4216; /* Green color for page numbers */
+}
+
+.link-item:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 1px;
+    width: calc(100% - 60px); /* Adjust width as needed */
+    background-color: #3CB371; /* Green line color */
+    z-index: -1; /* Ensure the line is behind text and icons */
+}
+
+.link-item:after {
+    content: '';
+    position: absolute;
+    right: 50px; /* Match the padding-right of the link-item */
+    top: 50%;
+    height: 1px;
+    width: 30px; /* Adjust to control the gap between text and number */
+    background-color: #3CB371; /* Green line color */
+    z-index: -1;
+}
+
+.fourth-page {
+    height: 100vh;
+    background-color: #3e4216; /* Same background color as the third page */
+    padding: 50px; /* Same padding as the third page */
+    opacity: 0; /* Set initial opacity to 0 */
+    transition: opacity 0.5s ease-in-out, background-color 0.5s ease-in-out; /* Same transition as the third page */
+    overflow-y: auto; /* Allows content to scroll if it overflows */
+    color: #3CB371; /* Same green font color as the third page */
+}
+
+.fourth-page h2 {
+    color: #3e4216; /* Same green color for the title as the third page */
+    font-size: 2em; /* Same font size for the title as the third page */
+    margin-bottom: 30px; /* Same space below the title as the third page */
+}
+
+.fourth-page p {
+    font-size: 1.2em; /* Same font size for the content as the third page */
+    color: #3e4216; /* Same green color for the text as the third page */
+    margin-bottom: 20px; /* Same space between paragraphs as the third page */
+}
+
+
+/* Styling for the fifth and sixth pages, similar to the fourth page */
+.fifth-page, .sixth-page {
+    height: 100vh;
+    background-color: #3e4216; /* Same background color as the fourth page */
+    padding: 50px; /* Same padding as the fourth page */
+    opacity: 0; /* Set initial opacity to 0 */
+    transition: opacity 0.5s ease-in-out, background-color 0.5s ease-in-out; /* Same transition as the fourth page */
+    overflow-y: auto; /* Allows content to scroll if it overflows */
+    color: #3CB371; /* Same green font color as the fourth page */
+}
+
+.fifth-page h2, .sixth-page h2 {
+    color: #3e4216; /* Same green color for the title as the fourth page */
+    font-size: 2em; /* Same font size for the title as the fourth page */
+    margin-bottom: 30px; /* Same space below the title as the fourth page */
+}
+
+.fifth-page p, .sixth-page p {
+    font-size: 1.2em; /* Same font size for the content as the fourth page */
+    color: #3e4216; /* Same green color for the text as the fourth page */
+    margin-bottom: 20px; /* Same space between paragraphs as the fourth page */
+}
+
+/* Hover effect for link items */
+.link-item:hover {
+    background-color: #4e5b36; /* Change to desired hover background color */
+    color: #ffffff; /* Change to desired hover font color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+
+
+
+.curved-image {
+    width: 100%; /* Reduce the width of the image to 50% */
+    height: 70%; /* Maintain the aspect ratio */
+    position: absolute;
+    bottom: 0; /* Push the image to the bottom */
+    left: 0; /* Push the image to the left */
+    border-top-right-radius: 500px; /* Adjust the top-right border-radius */
+    object-fit: cover; /* This will cover the area without stretching the image */
+}
+
+.title {
+    position: absolute;
+    top: 20px; /* Adjust the top position as needed */
+    right: 20px; /* Adjust the right position as needed */
+    background-color: transparent; /* Background color for the title */
+    color: white; /* Text color for the title */
+    padding: 20px 30px;
+    font-size: 4.5em; /* Adjust the font size as needed */
+    z-index: 10; /* Ensure the title is above the image */
+}
+
+@media (max-width: 768px) {
+    /* Additional responsive adjustments as needed */
+}
+/* CSS for the additional content container */
+.additional-content {
+    height: 400px; /* Set a fixed height for the container */
+    overflow-y: auto; /* Enable vertical scrolling when content exceeds the container height */
+    padding: 20px; /* Add padding as needed */
+}
